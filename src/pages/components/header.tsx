@@ -4,9 +4,11 @@ import {  useState } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import {AiOutlineClose} from 'react-icons/ai'
 
-export default function Header() {
+export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}:any) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const handleScroll = (ref:any) => {
+    ref.current?.scrollIntoView({behavior:'smooth'})
+  }; 
   return (
     <header className="flex bg-white justify-center">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -28,13 +30,13 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
+          <button className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center" onClick={() => handleScroll(aboutRef)}>
             ABOUT
-          </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
+          </button>
+          <button onClick={() => handleScroll(skillsRef)} className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             SKILLS
-          </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          </button>
+          <button onClick={() => handleScroll(introRef)} className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
             <span className="sr-only">Your Company</span>
             <div className="flex justify-center">
               <img
@@ -44,20 +46,20 @@ export default function Header() {
                 alt="Joshua Logo"
               />  
             </div>
-          </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
+          </button>
+          <button onClick={() => handleScroll(projectsRef)} className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             PROJECTS
-          </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
+          </button>
+          <button onClick={() => handleScroll(workRef)} className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             WORK
-          </a>
+          </button>
         </Popover.Group>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <button onClick={handleScroll} className="-m-1.5 p-1.5">
               <span className="sr-only">Joshua Logo</span>
                 <img
                   className="h-12 w-12"
@@ -65,7 +67,7 @@ export default function Header() {
                   src={JoshuaLogo}
                   alt="Joshua Logo"
                 />  
-            </a>
+            </button>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -78,30 +80,30 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              <a
-                  href="#"
+              <button
+                  onClick={handleScroll}
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   ABOUT
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={handleScroll}
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   SKILLS
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={handleScroll}
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   PROJECTS
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  onClick={handleScroll}
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   WORK
-                </a>
+                </button>
               </div>
             </div>
           </div>
