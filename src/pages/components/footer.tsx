@@ -16,7 +16,7 @@ const Footer = () => {
             alt="Joshua Logo"
           />       
       </div>
-      <div className="mb-2 flex justify-center items-center space-x-6">
+      <div className="mb-2 flex justify-center space-x-6">
         <a
           href="https://www.facebook.com/100000641954304/"
           type="button"
@@ -56,9 +56,8 @@ const Footer = () => {
       </div>
     </div>
 
-  <div className="p-4 text-center">
-    © <a className="text-whitehite" href="https://tailwind-elements.com/"
-      >Joshua Husayan 2023</a>
+  <div className="m-4 text-center">
+    © Joshua Husayan 2023
   </div>
 </footer>
   )
