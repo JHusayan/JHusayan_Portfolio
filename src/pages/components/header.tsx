@@ -1,13 +1,14 @@
+//@ts-ignore
+import JoshuaLogo from '../../assets/images/active.png'
 import {  useState } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import {AiOutlineClose} from 'react-icons/ai'
-// import JoshLogo from '../../assets/images/active.png'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="flex bg-white border-2 border-b-[#000000] justify-center">
+    <header className="flex bg-white justify-center">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
         </div>
@@ -22,23 +23,27 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             ABOUT
           </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             SKILLS
           </a>
           <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
             <span className="sr-only">Your Company</span>
-            <div className="h-8 w-auto">
-              {/* <JoshLogo/> */}
-              <img src='../../assets/images/active.png' alt='Joshua Logo'/>
+            <div className="flex justify-center">
+              <img
+                className="h-20 w-20"
+                draggable="false"
+                src={JoshuaLogo}
+                alt="Joshua Logo"
+              />  
             </div>
           </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             PROJECTS
           </a>
-          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          <a href="#" className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600 flex items-center">
             WORK
           </a>
         </Popover.Group>

@@ -1,3 +1,5 @@
+//@ts-ignore
+import JoshuaLogo from '../../assets/images/active.png'
 import React from 'react'
 import {FaLinkedinIn, FaFacebookF, FaGithub} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
@@ -6,9 +8,13 @@ const Footer = () => {
   return (
   <footer className="bg-white text-center text-neutral-900 flex flex-col justify-center">
     <div className="container px-6 pt-6 ">
-      <div className="h-8 w-auto">
-        {/* <JoshLogo/> */}
-        <img src='../../assets/images/active.png' alt='Joshua Logo'/>
+      <div className="flex justify-center mb-6">
+        <img
+            className="h-20 w-20"
+            draggable="false"
+            src={JoshuaLogo}
+            alt="Joshua Logo"
+          />       
       </div>
       <div className="mb-2 flex justify-center items-center space-x-6">
         <a
