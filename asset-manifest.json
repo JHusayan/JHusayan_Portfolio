@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JHusayan_Portfolio/static/css/main.dd65a7c8.css",
+    "main.js": "/JHusayan_Portfolio/static/js/main.19203462.js",
+    "index.html": "/JHusayan_Portfolio/index.html",
+    "main.dd65a7c8.css.map": "/JHusayan_Portfolio/static/css/main.dd65a7c8.css.map",
+    "main.19203462.js.map": "/JHusayan_Portfolio/static/js/main.19203462.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd65a7c8.css",
+    "static/js/main.19203462.js"
+  ]
+}
