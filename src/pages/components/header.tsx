@@ -19,7 +19,12 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
+            <img
+                className="h-12 w-12"
+                draggable="false"
+                src={JoshuaLogo}
+                alt="Joshua Logo"
+              />              
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
@@ -54,7 +59,12 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Joshua Logo</span>
-              <img src='../../assets/images/active.png' alt='Joshua Logo'/>
+                <img
+                  className="h-12 w-12"
+                  draggable="false"
+                  src={JoshuaLogo}
+                  alt="Joshua Logo"
+                />  
             </a>
             <button
               type="button"

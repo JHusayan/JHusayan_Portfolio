@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="container px-6 pt-6 ">
       <div className="flex justify-center mb-6">
         <img
-            className="h-20 w-20"
+            className="h-20 w-20 "
             draggable="false"
             src={JoshuaLogo}
             alt="Joshua Logo"
@@ -57,7 +57,9 @@ const Footer = () => {
     </div>
 
   <div className="m-4 text-center">
-    © Joshua Husayan 2023
+    <span>
+      © Joshua Husayan 2023
+    </span>
   </div>
 </footer>
   )
