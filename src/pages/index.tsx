@@ -14,7 +14,7 @@ const Index = () => {
   const projectsRef = useRef(null)
   const workRef = useRef(null)  
   return (
-    <>
+    <div className='relative'>
       <Header introRef={introRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} workRef={workRef}/>
       <Introduction introRef={introRef}/>
       <About aboutRef={aboutRef}/>
@@ -22,7 +22,7 @@ const Index = () => {
       <Projects projectsRef={projectsRef}/>
       <Work workRef={workRef}/>
       <Footer/>
-    </>
+    </div>
 
   )
 }

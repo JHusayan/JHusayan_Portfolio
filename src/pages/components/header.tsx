@@ -8,9 +8,10 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const handleScroll = (ref:any) => {
     ref.current?.scrollIntoView({behavior:'smooth'})
+    setMobileMenuOpen(false)
   }; 
   return (
-    <header className="flex bg-white justify-center">
+    <header className="flex bg-white justify-center shadow-md w-full top-0 left-0 right-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
         </div>
