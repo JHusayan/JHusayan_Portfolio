@@ -1,4 +1,3 @@
-import { Card } from 'flowbite-react/lib/esm/components/Card'
 import React from 'react'
 import {forwardRef} from 'react'
 
