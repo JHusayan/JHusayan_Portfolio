@@ -12,15 +12,15 @@ const Work = ({workRef}:any) => {
       <div className='flex flex-row space-x-8 justify-center p-5 items-center'>
         <Card>
           <img className='object-cover' src={DNALogo} alt="DNA Logo"/>
-          Junior Software Developer         
+          <div className="font-bold text-xl mb-2">Junior Software Developer</div>
         </Card>
         <Card>
           <img className='object-cover' src={SymphLogo} alt="Symph Logo"/>
-          Junior Software Developer         
+          <div className="font-bold text-xl mb-2">QA Technical Intern</div>       
         </Card>
         <Card>
           <img className='object-cover' src={USCLogo} alt="USC Logo"/>
-          Junior Software Developer         
+          <div className="font-bold text-xl mb-2">Thesis Project Manager</div>      
         </Card>
       </div>
     </div>

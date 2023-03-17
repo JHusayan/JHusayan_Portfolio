@@ -1,12 +1,13 @@
 import { Progress } from 'flowbite-react'
 import React from 'react'
 import {forwardRef} from 'react'
+import CodingPic from "../../assets/images/coding.jpg"
 
 const Skills = ({skillsRef}:any) => {
   return (
     <div className='bg-neutral-900 h-[500px] text-white flex flex-col justify-center mb-12 items-center' ref={skillsRef}>
       <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">Skills</h1>
-      <div className='w-full'>
+      <div className='w-full flex flex-row'>
         <div className='h-[50%] w-[50%] p-5 space-y-4'>
           <div className='space-y-3'>
             <div className="text-base font-medium dark:text-white">
@@ -59,8 +60,8 @@ const Skills = ({skillsRef}:any) => {
             />
           </div>
         </div>
-        <div className='h-[50%] w-[50%] p-5 space-y-4'>
-
+        <div className='flex justify-center w-[50%] p-5 space-y-4'>
+          <img className="h-[300px] w-[300px] object-fit grayscale"src={CodingPic} alt="Coding"/>
         </div>
       </div>
     </div>
