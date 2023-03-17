@@ -4,9 +4,9 @@ import {forwardRef} from 'react'
 
 const Projects = ({projectsRef}:any) => {
   return (
-    <div className='bg-white h-[500px] text-neutral-900 flex flex-col space-x-8 justify-center p-5 items-center' ref={projectsRef}>
-    <h1>Projects</h1>
-    <div className="h-56  sm:h-64 xl:h-80 2xl:h-96 sm:w-64 xl:w-80 2xl:w-96">
+    <div className='bg-white h-[500px] text-neutral-900 flex flex-col space-y-8 justify-center p-5 items-center' ref={projectsRef}>
+    <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white">Projects</h1>
+    <div className="h-56  sm:h-64 xl:h-80 2xl:h-96 sm:w-80 xl:w-[400px] 2xl:w-[544px]">
       <Carousel>
         <img
           src="https://flowbite.com/docs/images/carousel/carousel-1.svg"

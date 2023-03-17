@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         'smug' : "url('assets/images/1500x500.jpg')",
+        'awesome' : "url('assets/images/awesome.png')",
       }
     },
   },
