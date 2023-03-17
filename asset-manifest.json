@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/JHusayan_Portfolio/static/css/main.c9c5fdba.css",
-    "main.js": "/JHusayan_Portfolio/static/js/main.04e039c5.js",
+    "main.css": "/JHusayan_Portfolio/static/css/main.0dc3b0a1.css",
+    "main.js": "/JHusayan_Portfolio/static/js/main.3c68c7fe.js",
+    "static/media/awesome.png": "/JHusayan_Portfolio/static/media/awesome.82d4d964e864afc9fbd6.png",
+    "static/media/coding.jpg": "/JHusayan_Portfolio/static/media/coding.ee60a6c52eab5708622f.jpg",
+    "static/media/usc-logo.jpg": "/JHusayan_Portfolio/static/media/usc-logo.c0187d70cb512407954d.jpg",
+    "static/media/symph-logo.png": "/JHusayan_Portfolio/static/media/symph-logo.69863d8839ad5438b6ad.png",
     "index.html": "/JHusayan_Portfolio/index.html",
-    "main.c9c5fdba.css.map": "/JHusayan_Portfolio/static/css/main.c9c5fdba.css.map",
-    "main.04e039c5.js.map": "/JHusayan_Portfolio/static/js/main.04e039c5.js.map"
+    "main.0dc3b0a1.css.map": "/JHusayan_Portfolio/static/css/main.0dc3b0a1.css.map",
+    "main.3c68c7fe.js.map": "/JHusayan_Portfolio/static/js/main.3c68c7fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9c5fdba.css",
-    "static/js/main.04e039c5.js"
+    "static/css/main.0dc3b0a1.css",
+    "static/js/main.3c68c7fe.js"
   ]
 }
