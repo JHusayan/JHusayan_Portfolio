@@ -12,18 +12,32 @@ const Index = () => {
   const aboutRef = useRef(null)
   const skillsRef = useRef(null) 
   const projectsRef = useRef(null)
-  const workRef = useRef(null)  
-  return (
-    <div className='relative'>
-      <Header introRef={introRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} workRef={workRef}/>
-      <Introduction introRef={introRef}/>
-      <About aboutRef={aboutRef}/>
-      <Skills skillsRef={skillsRef}/>
-      <Projects projectsRef={projectsRef}/>
-      <Work workRef={workRef}/>
-      <Footer/>
-    </div>
+  const workRef = useRef(null) 
 
+  return (
+    <div className='relative h-screen w-screen snap-mandatory snap-y overflow-auto'>
+      <div className='snap-start'>
+        <Header introRef={introRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} workRef={workRef}/>
+      </div>
+      <div className='snap-start'>
+        <Introduction introRef={introRef}/>
+      </div>
+      <div className='snap-start'>
+        <About aboutRef={aboutRef}/>
+      </div>
+      <div className='snap-start'>
+        <Skills skillsRef={skillsRef}/>
+      </div>
+      <div className='snap-start'>
+        <Projects projectsRef={projectsRef}/>
+      </div>
+      <div className='snap-start'>
+        <Work workRef={workRef}/>
+      </div>
+      <div className='snap-start'>
+        <Footer/>
+      </div>
+    </div>
   )
 }
 

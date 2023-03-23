@@ -9,7 +9,7 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
     setMobileMenuOpen(false)
   }; 
   return (
-    <header className="flex bg-[#1f1f1f] text-white justify-center shadow-md w-full top-0 left-0 right-0">
+    <header className="flex bg-white text-neutral-900 justify-center shadow-md w-full top-0 left-0 right-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
         </div>
@@ -24,20 +24,20 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <button className="text-md font-bold leading-6 flex items-center hover:underline" onClick={() => handleScroll(aboutRef)}>
+          <button className="text-md font-semibold leading-6 flex items-center hover:underline" onClick={() => handleScroll(aboutRef)}>
             ABOUT
           </button>
-          <button onClick={() => handleScroll(skillsRef)} className="text-md font-bold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(skillsRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
             SKILLS
           </button>
-          <button onClick={() => handleScroll(introRef)} className="text-md font-bold leading-6 text-neutral-900 hover:text-gray-600">
+          <button onClick={() => handleScroll(introRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
             <span className="sr-only">Joshua Husayan</span>
             <div className="h-20 w-20 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"/>
           </button>
-          <button onClick={() => handleScroll(projectsRef)} className="text-md font-bold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(projectsRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
             PROJECTS
           </button>
-          <button onClick={() => handleScroll(workRef)} className="text-md font-bold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(workRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
             WORK
           </button>
         </Popover.Group>

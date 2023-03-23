@@ -4,7 +4,8 @@ import {forwardRef} from 'react'
 import Awesome from '../../assets/images/awesome.png'
 const About = ({aboutRef}:any) => {
   return (
-  <div className='bg-white h-[500px] text-neutral-900 flex flex-col justify-center items-center px-[10%] my-[2%]' ref={aboutRef}>
+    
+  <div className='bg-white w-full h-screen text-neutral-900 flex flex-col justify-center items-center px-[10%] my-[2%] ' ref={aboutRef}>
     <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white select-none">About</h1>
       <div className='w-full flex flex-row'>
         <div className='h-[400px] w-[50%] flex ml-9 justify-center space-y-4 mb-4 select-none'>
