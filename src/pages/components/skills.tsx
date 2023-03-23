@@ -10,58 +10,73 @@ const Skills = ({skillsRef}:any) => {
       <div className='w-full flex flex-row'>
         <div className='h-[50%] w-[50%] p-5 space-y-4'>
           <div className='space-y-3'>
-            <div className="text-base font-medium dark:text-white">
+            <div className="text-base font-medium dark:text-white select-none">
               HTML
             </div>
             <Progress
+            className='select-none font-light text-white bg-white'
             progress={90}
-            size="md"
+            labelProgress={true}
+            progressLabelPosition="inside"
+            size="lg"
             color="red"
             />
           </div>
           <div className='space-y-3'>
-            <div className="text-base font-medium dark:text-white">
+            <div className="text-base font-medium dark:text-white select-none">
               CSS
             </div>
             <Progress
+            className='select-none font-normal text-white bg-white'
             progress={90}
-            size="md"
+            labelProgress={true}
+            progressLabelPosition="inside"
+            size="lg"
             color="red"
             />
           </div>
           <div className='space-y-3'>
-            <div className="text-base font-medium dark:text-white">
+            <div className="text-base font-medium dark:text-white select-none">
               JAVASCRIPT
             </div>
             <Progress
+            className='select-none font-normal text-white bg-white'
             progress={90}
-            size="md"
+            labelProgress={true}
+            progressLabelPosition="inside"
+            size="lg"
             color="red"
             />
           </div>
           <div className='space-y-3'>
-            <div className="text-base font-medium dark:text-white">
+            <div className="text-base font-medium dark:text-white select-none">
               TYPESCRIPT
             </div>
             <Progress
+            className='select-none font-normal text-white bg-white'
             progress={80}
-            size="md"
+            labelProgress={true}
+            progressLabelPosition="inside"
+            size="lg"
             color="red"
             />
           </div>
           <div className='space-y-3'>
-            <div className="text-base font-medium dark:text-white">
+            <div className="text-base font-medium dark:text-white select-none">
               REACTJS
             </div>
             <Progress
+            className='select-none font-normal text-white bg-white'
             progress={80}
-            size="md"
+            labelProgress={true}
+            progressLabelPosition="inside"
+            size="lg"
             color="red"
             />
           </div>
         </div>
-        <div className='flex justify-center w-[50%] p-5 space-y-4'>
-          <img className="h-[300px] w-[300px] object-fit grayscale"src={CodingPic} alt="Coding"/>
+        <div className='flex justify-center w-[50%] p-5 items-center select-none '>
+          <img draggable="false" className="h-[350px] w-[350px] object-fit grayscale"src={CodingPic} alt="Coding"/>
         </div>
       </div>
     </div>

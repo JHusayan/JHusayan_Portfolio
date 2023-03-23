@@ -9,6 +9,8 @@ module.exports = {
       backgroundImage:{
         'smug' : "url('assets/images/1500x500.jpg')",
         'awesome' : "url('assets/images/awesome.png')",
+        'active' : "url('assets/images/active.png')",
+        'hover' : "url('assets/images/hover.png')",        
       }
     },
   },

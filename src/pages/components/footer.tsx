@@ -9,12 +9,7 @@ const Footer = () => {
   <footer className="bg-white items-center text-neutral-900 flex flex-col justify-center pb-3">
     <div className="container w-full">
       <div className="flex justify-center mb-6">
-        <img
-            className="h-20 w-20 "
-            draggable="false"
-            src={JoshuaLogo}
-            alt="Joshua Logo"
-          />       
+        <div className="h-20 w-20 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"/>    
       </div>
       <div className="mb-2 flex justify-center space-x-6">
         <a
