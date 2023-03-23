@@ -6,7 +6,7 @@ import CodingPic from "../../assets/images/coding.jpg"
 const Skills = ({skillsRef}:any) => {
   return (
     <div className='bg-neutral-900 h-[500px] text-white flex flex-col justify-center px-[10%] my-[2%] items-center' ref={skillsRef}>
-      <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">Skills</h1>
+      <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white select-none">Skills</h1>
       <div className='w-full flex flex-row'>
         <div className='h-[50%] w-[50%] p-5 space-y-4'>
           <div className='space-y-3'>
