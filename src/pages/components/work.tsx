@@ -7,7 +7,7 @@ import Card from './card'
 
 const Work = ({workRef}:any) => {
   return (
-    <div className='bg-neutral-900 h-[500px] text-white flex flex-col space-x-8 justify-center px-[10%] my-[2%] items-center' ref={workRef}>
+    <div className='bg-neutral-900 h-[500px] text-white flex flex-col space-x-8 justify-center px-[10%] my-[2%] items-center pb-3' ref={workRef}>
       <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white select-none">Work</h1>
       <div className='flex flex-row space-x-8 justify-center p-5 items-center'>
         <Card>
