@@ -17,7 +17,10 @@ module.exports = {
         'smug' : "url('assets/images/1500x500.jpg')",
         'awesome' : "url('assets/images/awesome.png')",
         'active' : "url('assets/images/active.png')",
-        'hover' : "url('assets/images/hover.png')",        
+        'hover' : "url('assets/images/hover.png')",
+        'thesis': "url('assets/images/thesis-login.png')",     
+        'continual': "url('assets/images/continual-game.png')", 
+        'rocketry': "url('assets/images/rocketry-game.jpg')",     
       }
     },
   },
