@@ -7,7 +7,7 @@ import React from "react";
 const Skills = ({ skillsRef }: any) => {
   return (
     <div
-      className="bg-neutral-900 w-full h-screen text-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
+      className="bg-neutral-900 w-screen h-screen text-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
       ref={skillsRef}
     >
       <Fade delay={1400}>

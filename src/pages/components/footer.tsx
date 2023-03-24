@@ -7,7 +7,7 @@ const Footer = ({ introRef }: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <footer className="bg-white items-center text-neutral-900 flex flex-col justify-center pb-3">
+    <footer className="bg-white items-center text-neutral-900 flex flex-col justify-center pb-3 pt-2">
       <div className="container w-full">
         <div className="flex justify-center mb-2 md:mb-6">
           <Tooltip content="Scroll to the Top" animation="duration-1000">

@@ -6,7 +6,7 @@ import React from "react";
 const About = ({ aboutRef }: any) => {
   return (
     <div
-      className="bg-white w-full h-screen text-neutral-900 flex flex-col justify-center items-center px-[15%] my-[2%] "
+      className="bg-white w-screen h-screen text-neutral-900 flex flex-col justify-center items-center px-[15%] my-[2%] "
       ref={aboutRef}
     >
       <Fade delay={1400} damping={0.1}>

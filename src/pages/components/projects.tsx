@@ -6,7 +6,7 @@ import React from "react";
 const Projects = ({ projectsRef }: any) => {
   return (
     <div
-      className="bg-white w-full h-screen text-neutral-900 flex flex-col space-y-8 justify-center px-[10%] my-[2%] items-center pb-3"
+      className="bg-white w-screen h-screen text-neutral-900 flex flex-col space-y-8 justify-center px-[10%] my-[2%] items-center pb-3"
       ref={projectsRef}
     >
       <Fade cascade delay={1400} damping={0.2}>

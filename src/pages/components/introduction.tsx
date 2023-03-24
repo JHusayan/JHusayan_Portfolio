@@ -6,7 +6,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const Introduction = ({ introRef }: any) => {
   return (
     <div
-      className="w-full h-screen p-5 bg-neutral-900 text-white flex flex-col justify-center md:p-0"
+      className="w-screen h-screen p-5 bg-neutral-900 text-white flex flex-col justify-center md:p-0"
       ref={introRef}
     >
       <Fade cascade damping={0.1} delay={1400}>
@@ -22,7 +22,7 @@ const Introduction = ({ introRef }: any) => {
             <a
               href="https://www.facebook.com/100000641954304/"
               type="button"
-              className=" flex justify-center h-10 w-10 border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-white hover:text-neutral-900 hover:border-white focus:outline-none focus:ring-0 drop-shadow-lg md:h-12 md:w-12 md:m-1"
+              className=" flex justify-center h-10 w-10 border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-white hover:text-neutral-900 hover:border-white focus:outline-none focus:ring-0 drop-shadow-lg md:h-12 md:w-12"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
