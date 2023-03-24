@@ -10,7 +10,7 @@ const Projects = ({ projectsRef }: any) => {
       ref={projectsRef}
     >
       <Fade cascade delay={1400} damping={0.2}>
-        <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white select-none">
+        <h1 className="text-5xl md:mb-6 font-medium mb-32 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white select-none">
           Projects
         </h1>
         <div className="h-56  sm:h-64 xl:h-80 2xl:h-96 sm:w-80 xl:w-[400px] 2xl:w-[544px]">

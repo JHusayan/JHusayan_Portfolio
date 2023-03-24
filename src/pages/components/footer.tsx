@@ -9,17 +9,17 @@ const Footer = ({ introRef }: any) => {
   return (
     <footer className="bg-white items-center text-neutral-900 flex flex-col justify-center pb-3">
       <div className="container w-full">
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-2 md:mb-6">
           <Tooltip content="Scroll to the Top" animation="duration-1000">
             <button
               className="text-md font-semibold leading-6 flex items-center hover:underline"
               onClick={() => handleScroll(introRef)}
             >
-              <div className="h-20 w-20 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"></div>
+              <div className="md:h-20 md:w-20 h-12 w-12 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"></div>
             </button>
           </Tooltip>
         </div>
-        <div className="mb-2 flex justify-center space-x-6">
+        <div className="mb-2 flex justify-center space-x-4 md:space-x-6">
           <a
             href="https://www.facebook.com/100000641954304/"
             type="button"
@@ -52,7 +52,7 @@ const Footer = ({ introRef }: any) => {
         </div>
       </div>
 
-      <div className="select-none w-full flex items-center justify-center">
+      <div className="select-none w-full flex items-center justify-center ">
         <span>© Joshua Husayan 2023</span>
       </div>
     </footer>

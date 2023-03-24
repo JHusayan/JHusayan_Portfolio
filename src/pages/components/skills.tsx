@@ -11,16 +11,16 @@ const Skills = ({ skillsRef }: any) => {
       ref={skillsRef}
     >
       <Fade delay={1400}>
-        <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white select-none">
+        <h1 className="text-5xl font-medium mb-2 leading-none tracking-tight text-white lg:text-6xl dark:text-white select-none md:mb-6 md:text-8xl">
           Skills
         </h1>
       </Fade>
-
-      <div className="w-full flex flex-row">
-        <div className="h-[50%] w-[50%] p-5 space-y-4">
+      <div className="w-full flex flex-col-reverse md:flex-row">
+        {/* Left Image */}
+        <div className="h-full w-full p-5 space-y-2 md:h-[50%] md:w-[50%] md:space-y-4">
           <Fade cascade damping={0.1} delay={1600} direction={"left"}>
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium dark:text-white select-none ">
                 HTML
               </div>
               <Progress
@@ -86,11 +86,12 @@ const Skills = ({ skillsRef }: any) => {
             </div>
           </Fade>
         </div>
-        <div className="w-[50%] flex justify-center p-5 items-center select-none">
+        {/* Right Image */}
+        <div className="w-full flex justify-center p-3 items-center select-none md:w-[50%] md:space-y-4 md:p-5">
           <Fade delay={1600} direction={"right"}>
             <img
               draggable="false"
-              className="h-[350px] w-[350px] object-fit grayscale"
+              className="h-[250px] w-[250px] object-fit grayscale md:h-[350px] md:w-[350px]"
               src={CodingPic}
               alt="Coding"
             />
