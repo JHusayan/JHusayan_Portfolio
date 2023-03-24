@@ -24,10 +24,10 @@ const Work = ({ workRef }: any) => {
             damping={0.2}
             direction="left"
           >
-            <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full ">
+            <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full bg-white">
               <img
                 draggable="false"
-                className="h-30 w-30 sm:h-64 sm:w-64 object-contain"
+                className="h-30 w-30 sm:h-64 sm:w-64 object-contain bg-white"
                 src={DNALogo}
                 alt="DNA Logo"
               />
@@ -38,11 +38,11 @@ const Work = ({ workRef }: any) => {
             <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full ">
               <img
                 draggable="false"
-                className="h-30 w-30 sm:h-64 sm:w-full object-contain"
+                className="h-30 w-30 sm:h-64 sm:w-64 object-cover"
                 src={SymphLogo}
                 alt="Symph Logo"
               />
-              <div className="font-medium sm:font-bold text-lg sm:text-xl mb-0 sm:mb-2 select-none">
+              <div className=" font-medium sm:font-bold text-lg sm:text-xl mb-0 sm:mb-2 select-none">
                 QA Technical Intern
               </div>
             </Card>
