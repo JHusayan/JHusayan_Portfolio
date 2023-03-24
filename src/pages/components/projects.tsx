@@ -9,7 +9,7 @@ const Projects = ({ projectsRef }: any) => {
       className="bg-white w-full h-screen text-neutral-900 flex flex-col space-y-8 justify-center px-[10%] my-[2%] items-center pb-3 "
       ref={projectsRef}
     >
-      <Fade cascade delay={1400} damping={0.2} triggerOnce>
+      <Fade cascade delay={1400} damping={0.2}>
         <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white select-none">
           Projects
         </h1>

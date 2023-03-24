@@ -10,7 +10,7 @@ const Skills = ({ skillsRef }: any) => {
       className="bg-neutral-900 w-full h-screen text-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
       ref={skillsRef}
     >
-      <Fade triggerOnce delay={1400}>
+      <Fade delay={1400}>
         <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white select-none">
           Skills
         </h1>
@@ -18,13 +18,7 @@ const Skills = ({ skillsRef }: any) => {
 
       <div className="w-full flex flex-row">
         <div className="h-[50%] w-[50%] p-5 space-y-4">
-          <Fade
-            cascade
-            damping={0.1}
-            triggerOnce
-            delay={1600}
-            direction={"left"}
-          >
+          <Fade cascade damping={0.1} delay={1600} direction={"left"}>
             <div className="space-y-3">
               <div className="text-base font-medium dark:text-white select-none">
                 HTML
@@ -93,7 +87,7 @@ const Skills = ({ skillsRef }: any) => {
           </Fade>
         </div>
         <div className="w-[50%] flex justify-center p-5 items-center select-none">
-          <Fade delay={1600} direction={"right"} triggerOnce>
+          <Fade delay={1600} direction={"right"}>
             <img
               draggable="false"
               className="h-[350px] w-[350px] object-fit grayscale"

@@ -28,7 +28,7 @@ const Index = () => {
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
       <Work workRef={workRef} />
-      <Footer />
+      <Footer introRef={introRef} />
     </div>
   );
 };
