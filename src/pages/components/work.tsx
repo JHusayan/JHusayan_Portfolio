@@ -14,7 +14,7 @@ const Work = ({ workRef }: any) => {
       ref={workRef}
     >
       <Fade cascade delay={1400} damping={0.2}>
-        <h1 className="text-8xl font-medium mb-6 leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white select-none">
+      <h1 className="text-5xl font-medium mb-2 leading-none tracking-tight text-white lg:text-6xl dark:text-white select-none md:mb-6 md:text-8xl">
           Work
         </h1>
         <div className="flex items-center justify-center space-x-12 p-5 flex-row">
