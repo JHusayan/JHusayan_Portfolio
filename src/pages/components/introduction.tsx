@@ -1,7 +1,7 @@
-import React from "react";
-import { forwardRef } from "react";
+import { Fade} from "react-awesome-reveal";
 import { FaLinkedinIn, FaFacebookF, FaGithub } from "react-icons/fa";
-import { Fade, Slide } from "react-awesome-reveal";
+import { forwardRef } from "react";
+import React from "react";
 
 const Introduction = ({ introRef }: any) => {
   return (

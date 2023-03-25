@@ -1,5 +1,4 @@
 import { FaLinkedinIn, FaFacebookF, FaGithub } from "react-icons/fa";
-import { Tooltip } from "flowbite-react";
 import React from "react";
 
 const Footer = ({ introRef }: any) => {
@@ -7,17 +6,15 @@ const Footer = ({ introRef }: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <footer className="bg-white items-center text-standard-black flex flex-col justify-center pb-3 pt-2">
+    <footer className="bg-standard-white items-center text-standard-black flex flex-col justify-center pb-3 pt-2">
       <div className="container w-full">
         <div className="flex justify-center mb-2 md:mb-6">
-          <Tooltip content="Scroll to the Top" animation="duration-1000">
-            <button
-              className="text-md font-semibold leading-6 flex items-center hover:underline"
-              onClick={() => handleScroll(introRef)}
-            >
-              <div className="md:h-20 md:w-20 h-12 w-12 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"></div>
-            </button>
-          </Tooltip>
+          <button
+            className="text-md font-semibold leading-6 flex items-center hover:underline"
+            onClick={() => handleScroll(introRef)}
+          >
+            <div className="md:h-20 md:w-20 h-12 w-12 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"></div>
+          </button>
         </div>
         <div className="mb-2 flex justify-center space-x-4 md:space-x-6">
           <a

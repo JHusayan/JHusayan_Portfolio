@@ -7,7 +7,7 @@ import React from "react";
 const Skills = ({ skillsRef }: any) => {
   return (
     <div
-      className="bg-neutral-900 w-screen h-screen text-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
+      className="bg-standard-black w-screen h-screen text-standard-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
       ref={skillsRef}
     >
       <Fade delay={1400}>
@@ -20,35 +20,35 @@ const Skills = ({ skillsRef }: any) => {
         <div className="h-full w-full p-5 space-y-2 md:h-[50%] md:w-[50%] md:space-y-4">
           <Fade cascade damping={0.1} delay={1600} direction={"left"}>
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium select-none">
                 HTML
               </div>
               <ProgressBar progressPercent={85} />
             </div>
 
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium  select-none">
                 CSS
               </div>
               <ProgressBar progressPercent={80} />
             </div>
 
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium  select-none">
                 JAVASCRIPT
               </div>
               <ProgressBar progressPercent={75} />
             </div>
 
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium  select-none">
                 TYPESCRIPT
               </div>
               <ProgressBar progressPercent={75} />
             </div>
 
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none">
+              <div className="text-base font-medium  select-none">
                 REACTJS
               </div>
               <ProgressBar progressPercent={75} />

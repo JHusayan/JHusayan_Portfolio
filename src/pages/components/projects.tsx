@@ -1,7 +1,10 @@
-import { Carousel } from "flowbite-react/lib/esm/components";
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
+import Card from "./card";
+import Continual from "../../assets/images/continual-game.png";
 import React from "react";
+import Rocketry from "../../assets/images/rocketry-game.jpg";
+import Thesis from "../../assets/images/thesis-login.png";
 
 const Projects = ({ projectsRef }: any) => {
   return (
@@ -10,27 +13,45 @@ const Projects = ({ projectsRef }: any) => {
       ref={projectsRef}
     >
       <Fade cascade delay={1400} damping={0.2}>
-      <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
+        <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
           Projects
         </h1>
-        <div className="h-64 w-[300px] sm:h-80 sm:w-[400px] 2xl:h-96 2xl:w-[544px] rounded-md">
-          <Carousel>
-            <div className="bg-thesis bg-center bg-cover flex justify-center items-start h-full w-full ">
-              <span className="bg-clip-text text-transparent bg-standard-black font-medium mt-3 select-none">
-                MonitorMySeaweed.com
-              </span>
-            </div>
-            <div className="bg-continual bg-center bg-cover flex justify-center items-start h-full w-full ">
-              <span className="bg-clip-text text-transparent bg-white font-medium mt-3 select-none">
-                Continual - Hyper Causal Desktop Game
-              </span>
-            </div>
-            <div className="bg-rocketry bg-center bg-cover flex justify-center items-start h-full w-full ">
-              <span className="bg-clip-text text-transparent bg-white font-medium mt-3 select-none">
-              Rocketry - Hyper Causal Mobile Game
-              </span>
-            </div>
-          </Carousel>
+        <div className="flex items-center justify-center space-y-5 sm:space-y-0 space-x-0 sm:space-x-12 p-5 flex-col sm:flex-row">
+          <Fade cascade delay={1600} damping={0.2} direction="left">
+            <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full bg-standard-white">
+              <img
+                draggable="false"
+                className="h-30 w-30 sm:h-64 sm:w-64 object-cover select-none"
+                src={Thesis}
+                alt="Thesis Login Page"
+              />
+              <div className="font-medium sm:font-bold text-lg sm:text-xl mb-0 sm:mb-2 select-none">
+                MonitorMySeaWeed.com
+              </div>
+            </Card>
+            <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full ">
+              <img
+                draggable="false"
+                className="h-30 w-30 sm:h-64 sm:w-64 object-cover select-none"
+                src={Rocketry}
+                alt="Rocketry Game Screen"
+              />
+              <div className=" font-medium sm:font-bold text-lg sm:text-xl mb-0 sm:mb-2 select-none">
+                Rocketry - Hyper Casual Mobile Game
+              </div>
+            </Card>
+            <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full ">
+              <img
+                draggable="false"
+                className="h-30 w-30 sm:h-64 sm:w-64 object-cover select-none"
+                src={Continual}
+                alt="Continual Game Screen"
+              />
+              <div className="font-medium sm:font-bold text-lg sm:text-xl mb-0 sm:mb-2 select-none">
+                Continual - Hyper Casual Game
+              </div>
+            </Card>
+          </Fade>
         </div>
       </Fade>
     </div>
