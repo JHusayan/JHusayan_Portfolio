@@ -7,7 +7,7 @@ const Footer = ({ introRef }: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <footer className="bg-white items-center text-neutral-900 flex flex-col justify-center pb-3 pt-2">
+    <footer className="bg-white items-center text-standard-black flex flex-col justify-center pb-3 pt-2">
       <div className="container w-full">
         <div className="flex justify-center mb-2 md:mb-6">
           <Tooltip content="Scroll to the Top" animation="duration-1000">
@@ -23,7 +23,7 @@ const Footer = ({ introRef }: any) => {
           <a
             href="https://www.facebook.com/100000641954304/"
             type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-neutral-900 uppercase leading-normal text-neutral-900 transition duration-150 ease-in-out hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-0"
+            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
@@ -33,7 +33,7 @@ const Footer = ({ introRef }: any) => {
           <a
             href="https://github.com/JHusayan"
             type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-neutral-900 uppercase leading-normal text-neutral-900 transition duration-150 ease-in-out hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-0"
+            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
@@ -43,7 +43,7 @@ const Footer = ({ introRef }: any) => {
           <a
             href="https://www.linkedin.com/in/joshua-alex-husayan-1374411b2/"
             type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-neutral-900 uppercase leading-normal text-neutral-900 transition duration-150 ease-in-out hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-0"
+            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >

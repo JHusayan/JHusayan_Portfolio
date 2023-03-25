@@ -6,11 +6,11 @@ import React from "react";
 const About = ({ aboutRef }: any) => {
   return (
     <div
-      className="bg-white w-screen h-screen text-neutral-900 flex flex-col justify-center items-center px-[15%] my-[2%] "
+      className="bg-standard-black w-screen h-screen text-standard-white flex flex-col justify-center items-center px-[15%] my-[2%] "
       ref={aboutRef}
     >
       <Fade delay={1400} damping={0.1}>
-      <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-neutral-900 md:text-5xl lg:text-6xl dark:text-white select-none">
+      <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
           About
         </h1>
       </Fade>
@@ -36,7 +36,7 @@ const About = ({ aboutRef }: any) => {
               <a
                 href="https://drive.google.com/file/d/1XHW_wEnR1j8YItIrC1SzwUTqzPyk97RB/view?usp=sharing"
                 type="button"
-                className="flex justify-center items-center space-x-9 m-1 py-3 px-7 font-semibold border-2 border-neutral-900 uppercase leading-normal text-neutral-900 transition duration-150 ease-in-out hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-0"
+                className="flex justify-center items-center space-x-9 m-1 py-3 px-7 font-semibold border-2 border-standard-red select-none uppercase leading-normal bg-standard-black text-standard-red transition duration-150 ease-in-out hover:text-standard-white hover:bg-standard-red focus:outline-none focus:ring-0"
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >

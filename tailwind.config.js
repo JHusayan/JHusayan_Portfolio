@@ -5,6 +5,11 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    colors:{
+      'standard-black' : '#171717',
+      'standard-red' : '#e0042c',
+      'standard-white' : '#FBFAF8',
+    },
     screens: {
       phone: '200px',
       sm: '480px',

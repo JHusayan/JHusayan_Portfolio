@@ -9,7 +9,7 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
     setMobileMenuOpen(false)
   }; 
   return (
-    <header className="flex bg-white text-neutral-900 justify-center shadow-md w-full top-0 left-0 right-0">
+    <header className="flex bg-standard-white text-standard-black justify-center shadow-md w-full top-0 left-0 right-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
         </div>
@@ -24,27 +24,27 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <button className="text-md font-semibold leading-6 flex items-center hover:underline" onClick={() => handleScroll(aboutRef)}>
+          <button className="text-md font-semibold leading-6 flex items-center select-none hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-standard-red" onClick={() => handleScroll(aboutRef)}>
             ABOUT
           </button>
-          <button onClick={() => handleScroll(skillsRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(skillsRef)} className="text-md font-semibold leading-6 select-none flex items-center hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-standard-red">
             SKILLS
           </button>
-          <button onClick={() => handleScroll(introRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(introRef)} className="text-md font-semibold leading-6 flex select-none items-center hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-standard-red">
             <span className="sr-only">Joshua Husayan</span>
             <div className="h-20 w-20 cursor-pointer bg-active bg-contain bg-no-repeat bg-center hover:bg-hover"/>
           </button>
-          <button onClick={() => handleScroll(projectsRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(projectsRef)} className="text-md font-semibold leading-6 flex items-center select-none hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-standard-red">
             PROJECTS
           </button>
-          <button onClick={() => handleScroll(workRef)} className="text-md font-semibold leading-6 flex items-center hover:underline">
+          <button onClick={() => handleScroll(workRef)} className="text-md font-semibold leading-6 flex items-center select-none hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-standard-red">
             WORK
           </button>
         </Popover.Group>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed h-80 inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed h-80 inset-y-0 right-0 z-10 w-full overflow-y-auto bg-standard-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <button onClick={handleScroll} className="-m-1.5 p-1.5">
               <span className="sr-only">Joshua Logo</span>
@@ -52,7 +52,7 @@ export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}
             </button>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-standard-black"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>

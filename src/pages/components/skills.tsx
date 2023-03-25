@@ -1,7 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
-import { Progress } from "flowbite-react";
 import CodingPic from "../../assets/images/coding.jpg";
+import ProgressBar from "./progress";
 import React from "react";
 
 const Skills = ({ skillsRef }: any) => {
@@ -11,7 +11,7 @@ const Skills = ({ skillsRef }: any) => {
       ref={skillsRef}
     >
       <Fade delay={1400}>
-        <h1 className="text-5xl font-medium mb-2 leading-none tracking-tight text-white lg:text-6xl dark:text-white select-none md:mb-6 md:text-8xl">
+      <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
           Skills
         </h1>
       </Fade>
@@ -20,69 +20,38 @@ const Skills = ({ skillsRef }: any) => {
         <div className="h-full w-full p-5 space-y-2 md:h-[50%] md:w-[50%] md:space-y-4">
           <Fade cascade damping={0.1} delay={1600} direction={"left"}>
             <div className="space-y-3">
-              <div className="text-base font-medium dark:text-white select-none ">
+              <div className="text-base font-medium dark:text-white select-none">
                 HTML
               </div>
-              <Progress
-                className="select-none font-light text-white bg-white"
-                progress={90}
-                labelProgress={true}
-                progressLabelPosition="inside"
-                size="lg"
-                color="red"
-              />
+              <ProgressBar progressPercent={85} />
             </div>
+
             <div className="space-y-3">
               <div className="text-base font-medium dark:text-white select-none">
                 CSS
               </div>
-              <Progress
-                className="select-none font-normal text-white bg-white"
-                progress={90}
-                labelProgress={true}
-                progressLabelPosition="inside"
-                size="lg"
-                color="red"
-              />
+              <ProgressBar progressPercent={80} />
             </div>
+
             <div className="space-y-3">
               <div className="text-base font-medium dark:text-white select-none">
                 JAVASCRIPT
               </div>
-              <Progress
-                className="select-none font-normal text-white bg-white"
-                progress={90}
-                labelProgress={true}
-                progressLabelPosition="inside"
-                size="lg"
-                color="red"
-              />
+              <ProgressBar progressPercent={75} />
             </div>
+
             <div className="space-y-3">
               <div className="text-base font-medium dark:text-white select-none">
                 TYPESCRIPT
               </div>
-              <Progress
-                className="select-none font-normal text-white bg-white"
-                progress={80}
-                labelProgress={true}
-                progressLabelPosition="inside"
-                size="lg"
-                color="red"
-              />
+              <ProgressBar progressPercent={75} />
             </div>
+
             <div className="space-y-3">
               <div className="text-base font-medium dark:text-white select-none">
                 REACTJS
               </div>
-              <Progress
-                className="select-none font-normal text-white bg-white"
-                progress={80}
-                labelProgress={true}
-                progressLabelPosition="inside"
-                size="lg"
-                color="red"
-              />
+              <ProgressBar progressPercent={75} />
             </div>
           </Fade>
         </div>
