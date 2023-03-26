@@ -1,14 +1,15 @@
-import React from 'react'
-interface ICardProps
-  extends React.HtmlHTMLAttributes<HTMLDivElement> {}
-const Card = (props:ICardProps) => {
+import React from "react";
+interface ICardProps extends React.HtmlHTMLAttributes<HTMLDivElement> {}
+const Card = (props: ICardProps) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-standard-white text-standard-black h-40 w-[80%] sm:w-full sm:h-[300px] flex justify-center items-center">
-        <div className="px-6 py-4">
-            {props.children}
+    <div className="w-56 max-w-xs bg-standard-white shadow-lg rounded-xl overflow-hidden my-5 sm:my-10 cursor-pointer">
+      <div className="group h-56 w-full [perspective:1000px]">
+        <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          {props.children}
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
