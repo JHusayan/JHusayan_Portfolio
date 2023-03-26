@@ -17,7 +17,7 @@ const About = ({ aboutRef }: any) => {
       <div className="w-full flex flex-col md:flex-row ">
         <div className="h-[150px] w-full md:h-[400px] md:w-[50%] flex ml-0 md:ml-9 justify-center space-y-0 md:space-y-4 sm:mb-2 md:mb-4 select-none p-10 sm:p-0">
           <Fade delay={1600} damping={0.1} direction={"left"}>
-            <img draggable="false" src={Awesome} alt="self portrait" />
+            <img className="border-2 border-standard-red rounded-full p-1" draggable="false" src={Awesome} alt="self portrait" />
           </Fade>
         </div>
         <div className="h-[100%] flex items-center justify-center flex-col space-y-3 w-full px-0 pl-0 mt-28 md:space-y-24 md:px-4 md:pl-24 md:mt-0">
