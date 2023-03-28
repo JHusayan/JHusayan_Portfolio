@@ -12,12 +12,12 @@ const Projects = ({ projectsRef }: any) => {
       className="bg-standard-black w-screen h-screen text-standard-black flex flex-col space-y-8 justify-center px-[10%] my-[2%] items-center pb-3"
       ref={projectsRef}
     >
-      <Fade cascade delay={1400} damping={0.2}>
+      <Fade triggerOnce cascade delay={1400} damping={0.2}>
       <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
           Projects
         </h1>
         <div className="flex items-center justify-center space-y-0 p-2 sm:space-y-0 space-x-0 sm:space-x-12 sm:p-5 flex-col sm:flex-row">
-          <Fade cascade delay={1600} damping={0.2} direction="left">
+          <Fade triggerOnce cascade delay={1600} damping={0.2} direction="left">
             <Card className="h-40 w-40 sm:h-64 sm:w-64 sm:min-w-full bg-standard-white">
               <div className="absolute inset-0">
                 <img

@@ -9,7 +9,7 @@ const Introduction = ({ introRef }: any) => {
       className="w-screen h-screen p-5  bg-standard-black text-standard-white flex flex-col justify-center md:p-0"
       ref={introRef}
     >
-      <Fade cascade damping={0.1} delay={1400}>
+      <Fade triggerOnce cascade damping={0.1} delay={1400}>
         <h1 className="text-lg mb-1 font-medium select-none md:mb-2 md:text-xl ">Hello, I'm</h1>
         <h1 className="text-standard-red text-5xl font-medium mb-4 select-none drop-shadow-lg shadow-neutral-900 md:text-8xl md:mb-6">
           Joshua Alex L. Husayan
@@ -18,7 +18,7 @@ const Introduction = ({ introRef }: any) => {
           an Aspiring Web and Game Developer
         </h1>
         <div className="flex flex-row items-center justify-center space-x-4 md:space-x-6">
-          <Fade cascade damping={0.1} delay={1600} direction={"left"}>
+          <Fade triggerOnce cascade damping={0.1} delay={1600} direction={"left"}>
             <a
               href="https://www.facebook.com/100000641954304/"
               type="button"
