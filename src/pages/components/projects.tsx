@@ -1,6 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
-import Card from "./card";
+import Card from "../../components/card";
 import Continual from "../../assets/images/continual-game.png";
 import React from "react";
 import Rocketry from "../../assets/images/rocketry-game.jpg";

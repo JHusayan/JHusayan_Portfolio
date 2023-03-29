@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Introduction from "./components/introduction";
 import Projects from "./components/projects";
 import React, { useRef } from "react";
-import Skills from "./components/skills";
+import Skills from "../components/skills";
 import Work from "./components/work";
 
 const Index = () => {

@@ -1,7 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
-import CodingPic from "../../assets/images/coding.jpg";
-import ProgressBar from "./progress";
+import CodingPic from "../assets/images/coding.jpg";
+import ProgressBar from "../pages/components/progress";
 import React from "react";
 
 const Skills = ({ skillsRef }: any) => {

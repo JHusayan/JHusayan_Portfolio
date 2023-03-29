@@ -1,6 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
-import Card from "./card";
+import Card from "../../components/card";
 import DNALogo from "../../assets/images/dna-logo.png";
 import React from "react";
 import SymphLogo from "../../assets/images/symph-logo.png";

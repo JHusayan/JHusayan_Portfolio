@@ -1,10 +1,17 @@
-import { FaLinkedinIn, FaFacebookF, FaGithub } from "react-icons/fa";
+import { IconsLink } from "../../components/icons";
+import Icons from "../../components/icons";
 import React from "react";
 
 const Footer = ({ introRef }: any) => {
+  const {
+    url: { facebook, github, linkedIn },
+    style: { footer },
+    icon: { facebookIcon, githubIcon, linkedInIcon },
+  } = IconsLink;
   const handleScroll = (ref: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <footer className="bg-standard-white items-center text-standard-black flex flex-col justify-center pb-3 pt-2">
       <div className="container w-full">
@@ -17,35 +24,9 @@ const Footer = ({ introRef }: any) => {
           </button>
         </div>
         <div className="mb-2 flex justify-center space-x-4 md:space-x-6">
-          <a
-            href="https://www.facebook.com/100000641954304/"
-            type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            <FaFacebookF className="h-full w-3" />
-          </a>
-
-          <a
-            href="https://github.com/JHusayan"
-            type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            <FaGithub className="h-full w-6" />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/joshua-alex-husayan-1374411b2/"
-            type="button"
-            className="flex justify-center m-1 h-10 w-10 border-2 border-standard-black uppercase leading-normal text-standard-black transition duration-150 ease-in-out hover:bg-standard-black hover:text-standard-white focus:outline-none focus:ring-0"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            <FaLinkedinIn className="h-full w-5" />
-          </a>
+          <Icons url={facebook} style={footer} icon={facebookIcon} />
+          <Icons url={github} style={footer} icon={githubIcon} />
+          <Icons url={linkedIn} style={footer} icon={linkedInIcon} />
         </div>
       </div>
 
