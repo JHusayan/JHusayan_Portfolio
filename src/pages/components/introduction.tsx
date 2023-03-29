@@ -1,10 +1,11 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
 import { IconsLink } from "../../components/icons";
+import { RefProps } from "../Interface";
 import Icons from "../../components/icons";
 import React from "react";
 
-const Introduction = ({ introRef }: any) => {
+const Introduction = ({ introRef }:RefProps) => {
   const {
     url: { facebook, github, linkedIn },
     style: { intro },

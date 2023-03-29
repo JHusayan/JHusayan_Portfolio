@@ -1,8 +1,9 @@
 import { IconsLink } from "../../components/icons";
+import { RefProps } from "../Interface";
 import Icons from "../../components/icons";
 import React from "react";
 
-const Footer = ({ introRef }: any) => {
+const Footer = ({ introRef }: RefProps) => {
   const {
     url: { facebook, github, linkedIn },
     style: { footer },

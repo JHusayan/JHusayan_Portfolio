@@ -1,24 +1,30 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
-import CodingPic from "../assets/images/coding.jpg";
-import ProgressBar from "../pages/components/progress";
+import { RefProps } from "../Interface";
+import CodingPic from "../../assets/images/coding.jpg";
+import ProgressBar from "../../components/progress";
 import React from "react";
+import Title from "../../components/title";
 
-const Skills = ({ skillsRef }: any) => {
+const Skills = ({ skillsRef }: RefProps) => {
   return (
     <div
       className="bg-standard-black w-screen h-screen text-standard-white flex flex-col justify-center px-[10%] my-[2%] pb-3 items-center "
       ref={skillsRef}
     >
       <Fade triggerOnce delay={1400}>
-        <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
-          Skills
-        </h1>
+        <Title>Skills</Title>
       </Fade>
       <div className="w-full flex flex-col-reverse md:flex-row">
         {/* Left Image */}
         <div className="h-full w-full p-5 space-y-2 md:h-[50%] md:w-[50%] md:space-y-4">
-          <Fade triggerOnce cascade damping={0.1} delay={1600} direction={"left"}>
+          <Fade
+            triggerOnce
+            cascade
+            damping={0.1}
+            delay={1600}
+            direction={"left"}
+          >
             <div className="space-y-3">
               <div className="text-base font-medium select-none">HTML</div>
               <ProgressBar progressPercent={85} />

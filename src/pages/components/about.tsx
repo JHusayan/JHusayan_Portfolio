@@ -1,23 +1,28 @@
 import { Fade } from "react-awesome-reveal";
 import { forwardRef } from "react";
+import { RefProps } from "../Interface";
 import Awesome from "../../assets/images/awesome.png";
 import React from "react";
+import Title from "../../components/title";
 
-const About = ({ aboutRef }: any) => {
+const About = ({ aboutRef }: RefProps) => {
   return (
     <div
       className="bg-standard-black w-screen h-screen text-standard-white flex flex-col justify-center items-center px-[15%] my-[2%] "
       ref={aboutRef}
     >
       <Fade delay={1400} damping={0.1} triggerOnce>
-      <h1 className="text-5xl md:mb-6 font-medium mb-0 leading-none tracking-tight text-standard-red md:text-5xl lg:text-6xl select-none underline underline-offset-8 decoration-2 decoration-standard-white">
-          About
-        </h1>
+        <Title>About</Title>
       </Fade>
       <div className="w-full flex flex-col md:flex-row ">
         <div className="h-[150px] w-full md:h-[400px] md:w-[50%] flex ml-0 md:ml-9 justify-center space-y-0 md:space-y-4 sm:mb-2 md:mb-4 select-none p-10 sm:p-0">
           <Fade triggerOnce delay={1600} damping={0.1} direction={"left"}>
-            <img className="border-2 border-standard-red rounded-full p-1" draggable="false" src={Awesome} alt="self portrait" />
+            <img
+              className="border-2 border-standard-red rounded-full p-1"
+              draggable="false"
+              src={Awesome}
+              alt="self portrait"
+            />
           </Fade>
         </div>
         <div className="h-[100%] flex items-center justify-center flex-col space-y-3 w-full px-0 pl-0 mt-28 md:space-y-24 md:px-4 md:pl-24 md:mt-0">

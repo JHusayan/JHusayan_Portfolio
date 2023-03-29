@@ -1,6 +1,8 @@
 import React from "react";
-
-const ProgressBar = ({progressPercent}:any) => {
+interface ProgressBarProps {
+  progressPercent:number
+}
+const ProgressBar = ({progressPercent}:ProgressBarProps) => {
   return (
     <div className="space-y-3">
       <div className="h-4 w-full border-standard-red bg-standard-black border-2 rounded-full py-2 flex items-center">

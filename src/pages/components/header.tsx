@@ -1,9 +1,11 @@
 import {  useState } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
+import { RefProps } from "../Interface";
 import {AiOutlineClose} from 'react-icons/ai'
 
-export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}:any) {
+export default function Header({introRef,aboutRef,skillsRef,projectsRef,workRef}:RefProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  
   const handleScroll = (ref:any) => {
     ref.current?.scrollIntoView({behavior:'smooth'})
     setMobileMenuOpen(false)
