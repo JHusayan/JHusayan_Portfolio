@@ -16,7 +16,7 @@ const Index = () => {
   const workRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="relative h-screen w-screen sm:overflow-x-hidden">
+    <div className="relative h-screen w-full sm:overflow-x-hidden">
       <Header
         introRef={introRef}
         aboutRef={aboutRef}

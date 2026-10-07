@@ -13,18 +13,18 @@ const Introduction = ({ introRef }:RefProps) => {
   } = IconsLink;
   return (
     <div
-      className="w-screen h-screen p-5 bg-standard-black flex flex-col justify-center md:p-0"
+      className="w-full h-screen snap-start scroll-mt-24 p-5 bg-standard-black flex flex-col justify-center md:p-0"
       ref={introRef}
     >
-      <Fade triggerOnce cascade damping={0.1} delay={1400}>
-        <h1 className="text-standard-white text-lg mb-1 font-medium select-none md:mb-2 md:text-xl">
+      <Fade triggerOnce cascade damping={0.1} delay={300} duration={800}>
+        <h1 className="text-standard-white text-xl mb-1 font-medium select-none md:mb-2 md:text-3xl">
           Hello, I'm
         </h1>
         <h1 className="text-standard-red text-5xl font-medium mb-4 select-none drop-shadow-lg shadow-neutral-900 md:text-8xl md:mb-6">
           Joshua Alex L. Husayan
         </h1>
         <h1 className="text-standard-white text-xl font-medium mb-8 select-none drop-shadow-lg shadow-white md:text-4xl md:mb-10">
-          an Aspiring Web and Game Developer
+          a Full Stack Software Engineer
         </h1>
         <Fade triggerOnce cascade damping={0.1} delay={1600} direction={"left"}>
           <div className="flex flex-row items-center justify-center space-x-4 md:space-x-6">

@@ -25,7 +25,10 @@ module.exports = {
         'thesis': "url('assets/images/thesis-login.png')",     
         'continual': "url('assets/images/continual-game.png')", 
         'rocketry': "url('assets/images/rocketry-game.jpg')",     
-      }
+      },
+      fontFamily: {
+        sans: ["Libron", "Georgia", "serif"],
+      },
     },
   }
 }
