@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/JHusayan_Portfolio/static/css/main.fa82bdfe.css",
-    "main.js": "/JHusayan_Portfolio/static/js/main.2eaf65f3.js",
+    "main.css": "/JHusayan_Portfolio/static/css/main.f8c61042.css",
+    "main.js": "/JHusayan_Portfolio/static/js/main.fbbe067b.js",
     "static/media/awesome.png": "/JHusayan_Portfolio/static/media/awesome.82d4d964e864afc9fbd6.png",
-    "static/media/coding.jpg": "/JHusayan_Portfolio/static/media/coding.ee60a6c52eab5708622f.jpg",
+    "static/media/Libron-Italic.woff2": "/JHusayan_Portfolio/static/media/Libron-Italic.389c390f6ce005a055b6.woff2",
     "static/media/usc-logo.jpg": "/JHusayan_Portfolio/static/media/usc-logo.c0187d70cb512407954d.jpg",
+    "static/media/Libron-Bold.woff2": "/JHusayan_Portfolio/static/media/Libron-Bold.eb1b7d0de2e97bf7fb02.woff2",
+    "static/media/Libron-Regular.woff2": "/JHusayan_Portfolio/static/media/Libron-Regular.53483d2ac26b5a32ad0c.woff2",
     "static/media/thesis-login.png": "/JHusayan_Portfolio/static/media/thesis-login.77f8f1922e4009a0c2e3.png",
+    "static/media/alliance-logo.a9e3b235.svg": "/JHusayan_Portfolio/static/media/alliance-logo.a9e3b235.c41e702acc1528c5526538dd39308095.svg",
     "static/media/continual-game.png": "/JHusayan_Portfolio/static/media/continual-game.e68ece2c64e9c84551a1.png",
     "static/media/rocketry-game.jpg": "/JHusayan_Portfolio/static/media/rocketry-game.ce556ef439231669e005.jpg",
     "index.html": "/JHusayan_Portfolio/index.html",
-    "main.fa82bdfe.css.map": "/JHusayan_Portfolio/static/css/main.fa82bdfe.css.map",
-    "main.2eaf65f3.js.map": "/JHusayan_Portfolio/static/js/main.2eaf65f3.js.map"
+    "main.f8c61042.css.map": "/JHusayan_Portfolio/static/css/main.f8c61042.css.map",
+    "main.fbbe067b.js.map": "/JHusayan_Portfolio/static/js/main.fbbe067b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa82bdfe.css",
-    "static/js/main.2eaf65f3.js"
+    "static/css/main.f8c61042.css",
+    "static/js/main.fbbe067b.js"
   ]
 }
