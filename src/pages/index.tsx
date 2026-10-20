@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Introduction from "./components/introduction";
 import Projects from "./components/projects";
+import KoiBackground from "../components/koi";
 import React, { useRef } from "react";
 import Skills from "./components/skills";
 import Work from "./components/work";
@@ -17,6 +18,7 @@ const Index = () => {
 
   return (
     <div className="relative h-screen w-full sm:overflow-x-hidden">
+      <KoiBackground  />
       <Header
         introRef={introRef}
         aboutRef={aboutRef}

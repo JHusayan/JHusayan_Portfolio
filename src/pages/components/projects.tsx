@@ -14,7 +14,7 @@ const Projects = ({ projectsRef }: RefProps) => {
 
   return (
     <div
-      className="bg-standard-black w-full min-h-screen snap-start pt-24 md:pt-32 box-border text-standard-black flex flex-col space-y-8 justify-center px-[10%] items-center pb-3"
+      className="w-full min-h-screen snap-start pt-24 md:pt-32 box-border text-standard-black flex flex-col space-y-8 justify-center px-[10%] items-center pb-3"
       ref={projectsRef}
     >
       <Reveal show={show}>

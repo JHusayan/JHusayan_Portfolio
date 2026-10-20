@@ -25,7 +25,7 @@ const Skills = ({ skillsRef }: RefProps) => {
 
   return (
     <div
-      className="bg-standard-black w-full min-h-screen snap-start pt-24 md:pt-32 box-border text-standard-white flex flex-col justify-center px-[10%] pb-8 items-center"
+      className="w-full min-h-screen snap-start pt-24 md:pt-32 box-border text-standard-white flex flex-col justify-center px-[10%] pb-8 items-center"
       ref={skillsRef}
     >
       <Reveal show={show}>

@@ -10,7 +10,7 @@ const About = ({ aboutRef }: RefProps) => {
 
   return (
     <div
-      className="bg-standard-black w-full h-screen snap-start pt-24 md:pt-32 box-border text-standard-white flex flex-col justify-center items-center px-[15%]"
+      className="w-full h-screen snap-start pt-24 md:pt-32 box-border text-standard-white flex flex-col justify-center items-center px-[15%]"
       ref={aboutRef}
     >
       <Reveal show={show}>

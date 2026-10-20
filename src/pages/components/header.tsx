@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { RefProps } from "../Interface";
 import { AiOutlineClose } from "react-icons/ai";
+import { scrollToRef } from "../../utils/scrollToRef";
 
 export default function Header({
   introRef,
@@ -16,7 +17,7 @@ export default function Header({
     setMobileMenuOpen(false);
     // Wait a tick so the dialog's scroll lock is released before scrolling
     setTimeout(() => {
-      ref?.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToRef(ref);
     }, 50);
   };
 

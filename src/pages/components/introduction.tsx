@@ -13,7 +13,7 @@ const Introduction = ({ introRef }:RefProps) => {
   } = IconsLink;
   return (
     <div
-      className="w-full h-screen snap-start scroll-mt-24 p-5 bg-standard-black flex flex-col justify-center md:p-0"
+      className="w-full h-screen snap-start scroll-mt-24 p-5 flex flex-col justify-center md:p-0"
       ref={introRef}
     >
       <Fade triggerOnce cascade damping={0.1} delay={300} duration={800}>
