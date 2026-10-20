@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JHusayan_Portfolio/static/css/main.f8c61042.css",
-    "main.js": "/JHusayan_Portfolio/static/js/main.fbbe067b.js",
+    "main.css": "/JHusayan_Portfolio/static/css/main.2e98c7ca.css",
+    "main.js": "/JHusayan_Portfolio/static/js/main.c1e3c4c5.js",
     "static/media/awesome.png": "/JHusayan_Portfolio/static/media/awesome.82d4d964e864afc9fbd6.png",
     "static/media/Libron-Italic.woff2": "/JHusayan_Portfolio/static/media/Libron-Italic.389c390f6ce005a055b6.woff2",
     "static/media/usc-logo.jpg": "/JHusayan_Portfolio/static/media/usc-logo.c0187d70cb512407954d.jpg",
@@ -12,11 +12,11 @@
     "static/media/continual-game.png": "/JHusayan_Portfolio/static/media/continual-game.e68ece2c64e9c84551a1.png",
     "static/media/rocketry-game.jpg": "/JHusayan_Portfolio/static/media/rocketry-game.ce556ef439231669e005.jpg",
     "index.html": "/JHusayan_Portfolio/index.html",
-    "main.f8c61042.css.map": "/JHusayan_Portfolio/static/css/main.f8c61042.css.map",
-    "main.fbbe067b.js.map": "/JHusayan_Portfolio/static/js/main.fbbe067b.js.map"
+    "main.2e98c7ca.css.map": "/JHusayan_Portfolio/static/css/main.2e98c7ca.css.map",
+    "main.c1e3c4c5.js.map": "/JHusayan_Portfolio/static/js/main.c1e3c4c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8c61042.css",
-    "static/js/main.fbbe067b.js"
+    "static/css/main.2e98c7ca.css",
+    "static/js/main.c1e3c4c5.js"
   ]
 }
